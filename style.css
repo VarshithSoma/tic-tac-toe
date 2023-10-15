@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  height: 100dvh;
+  overflow: hidden;
+  font-size: 16px;
+  background: #27374d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+.container {
+  width: 70vmin;
+  height: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+.user__1,
+.user__2 {
+  padding: 10px;
+  border: 1px solid #dde6ed;
+  margin-bottom: 10px;
+}
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #526d82;
+  gap: 2.7rem;
+  padding: 2.5rem;
+  width: 75vmin;
+}
+.retry {
+  color: #e5d283;
+}
+.user-x {
+  color: #e5d283;
+}
+.user-o {
+  color: #f0f0f0;
+}
+.looks {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.6);
+}
+.turns {
+  font-size: 2rem;
+  background: #9db2bf;
+  color: #dde6ed;
+  box-shadow: -2px 6px 18px -4px rgba(0, 0, 0, 0.78);
+  -webkit-box-shadow: -2px 6px 18px -4px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: -2px 6px 18px -4px rgba(0, 0, 0, 0.78);
+  border-radius: 1rem;
+  padding: 1rem;
+  transform: scale(0.7);
+}
+
+.btn-option {
+  border: none;
+  height: 22vmin;
+  width: 22vmin;
+  font-size: 6rem;
+  background: #9db2bf;
+  color: #dde6ed;
+  box-shadow: -2px 6px 18px -4px rgba(0, 0, 0, 0.78);
+  -webkit-box-shadow: -2px 6px 18px -4px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: -2px 6px 18px -4px rgba(0, 0, 0, 0.78);
+}
+
+.popup {
+  background: #27374d;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12vmin;
+}
+
+#restart {
+  font-size: medium;
+  padding: 1em 2rem;
+  border: navy;
+  background-color: #dde6ed;
+  border-radius: 1em;
+}
+
+#message {
+  color: #dde6ed;
+  text-align: center;
+  font-size: 1em;
+}
+.hide {
+  display: none;
+}
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+#restart {
+  cursor: pointer;
+}
+
+.logo {
+  background-color: none;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+}
+.retry {
+  cursor: pointer;
+}
+.users {
+  transform: scale(1.09);
+}
+
+@media only screen and (max-width: 650px) {
+  .logo {
+    display: none;
+  }
+  .turns {
+    margin-right: -0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body {
+    margin-top: 5rem;
+  }
+  .popup {
+    width: 100dvw;
+    height: 100dvh;
+  }
+  .users {
+    transform: scale(1);
+  }
+}

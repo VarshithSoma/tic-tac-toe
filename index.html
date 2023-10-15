@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="Screenshot_2023-10-15_at_1.41.37_PM-removebg-preview.png"
+      type="image/icon type"
+    />
+  </head>
+  <body>
+    <div class="users">
+      <div class="looks">
+        <span class="user-x">X</span><span class="user-o">O</span>
+      </div>
+      <div class="turns">X TURN</div>
+      <div class="retry">&#x21bb;</div>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+        <button class="btn-option" data-row="0" data-col="0"></button>
+        <button class="btn-option" data-row="0" data-col="1"></button>
+        <button class="btn-option" data-row="0" data-col="2"></button>
+        <button class="btn-option" data-row="1" data-col="0"></button>
+        <button class="btn-option" data-row="1" data-col="1"></button>
+        <button class="btn-option" data-row="1" data-col="2"></button>
+        <button class="btn-option" data-row="2" data-col="0"></button>
+        <button class="btn-option" data-row="2" data-col="1"></button>
+        <button class="btn-option" data-row="2" data-col="2"></button>
+      </div>
+    </div>
+    <div class="popup hide">
+      <p id="message">new game</p>
+      <button id="restart">new game</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
